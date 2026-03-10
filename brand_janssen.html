@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JANSSEN</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="Website icon" type="png" href="logo.png">
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+<div class="bg">
+  <img src="vs7.png" alt="">
+<div class="instruction"> 
+  <h1 style="font-family:'Verdana'">Janssen</h1>
+  <p style="font-family:'Avantgarde'">&nbsp;&nbsp;&nbsp;&nbsp;The Janssen COVID‑19 vaccine, sold under the brand name Jcovden, is a COVID‑19 vaccine that was developed by Janssen Vaccines in Leiden, Netherlands,[28] and its Belgian parent company Janssen Pharmaceuticals,[29] a subsidiary of American company Johnson & Johnson.</p>
+    <br>
+    <center style="float:right">
+      <img src="brand_janssen.jpg" alt="" width="200px" height="200px">
+    </center>
+</div>
+  <a href="student.html" id="Back"><b>BACK</b></a>
+</div>  
+</div>
+ 
+<div class="container">
+<div class="image-container">
+
+<div class="image" data-title="fruelda">
+ <img src="Fruelda.jpg" alt="">
+  <h4>JHON JOSEPH FRUELDA</h4>
+   <div class="media-icons">
+    <a href="fruelda.html">
+     <i class='bx bxs-user-detail icon bx-md bx-burst-hover' style = "position:relative; left: 3%; top: 25px;" ></i>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+ 
+<script>
+let searchBox = document.querySelector('#search-box');
+let images = document.querySelectorAll('.container .image-container .image');
+
+searchBox.oninput = () =>{
+   images.forEach(hide => hide.style.display = 'none');
+   let value = searchBox.value
+   images.forEach(filter =>{
+      let title = filter.getAttribute('data-title');
+      if(value == title){
+         filter.style.display = 'block';
+      }
+      if(searchBox.value == ''){
+      filter.style.display = 'block';
+      }
+   });
+};
+</script>
+</body>
+</html>
