@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=.0">
+<title>TEVES</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="Website icon" type="png" href="logo.png">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="left">
+  <img src="Teves.jpg" alt="user" width="130px" class="image_user">
+  <h4>ROBERT BENEDICT TEVES</h4>
+  <h3 style="color:black ;">STUDENT</h3>
+</div>
+
+<div class="right">
+<div class="info">
+  <h3>VACCINE STATUS</h3>    
+<div class="info_data">
+<div class="data">
+  <h4>Date of Vaccination</h4>
+  <p style="font-size: 15px;">1st Dose: 07/22/2021</p>
+  <p style="font-size: 15px;">2nd Dose: 08/19/2021</p>
+</div>
+<div class="data">
+  <h4>Contact</h4>
+  <p style="font-size: 18px;">09619696516</p>
+</div>
+</div>
+</div>
+<div class="projects">
+  <h3>VACCINE</h3>
+<div class="projects_data">
+<div class="data">
+  <h4>Vaccine Type</h4>
+  <p style="font-size: 18px;">Sinovac</p>
+</div>
+<div class="data">
+  <h4>FULLY VACCINATED</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+<div class="back">
+  <center>
+    <button id="printButton" onclick="printPage()">PRINT</button>
+  </center>
+</div>
+
+<script>
+  function printPage() {
+    var printButton = document.getElementById("printButton");
+    printButton.classList.add("hidden");
+    window.print();
+  }
+</script>
+</body>
+</html>
