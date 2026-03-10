@@ -1,0 +1,88 @@
+body {
+    background: rgb(9,19,24);
+    background: linear-gradient(90deg, rgba(9,19,24,1) 0%, rgba(17,30,88,1) 100%);
+    margin: 0%;
+}
+
+.vs1 {
+    position: absolute;
+    bottom: 5px;
+}
+
+.bsds {
+    position: absolute;
+    right: 200px;
+    bottom: 300px;
+    color: white;
+    font-size: 25px;
+}
+
+.view {
+    background-color: white;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+    padding-right: 0%;
+    padding-left: 0%;
+    position: absolute;
+    right: 350px;
+    bottom: 250px ;
+}
+
+.view:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.m1 {
+    position: absolute;
+    top: 150px;
+    opacity: 20%;
+}
+.m2{
+    position: absolute;
+    width: 150px;
+    left: 300px;
+    opacity: 20%;
+}
+.m3{
+    position: absolute;
+    width: 150px;
+    left: 600px;
+    top: 200px;
+    opacity: 20%;
+}
+
+.navv ul {
+    display: flex;
+    list-style: none;
+}
+
+.navv li {
+   background-color: #959ca6;
+   color: black;
+   margin-right: 10px;
+   margin-top: 0%;
+   padding: 10px;
+   border-radius: 10px;
+   font-family: Arial;
+   font-size: small;
+   font-weight: bolder;
+}
+
+.foot{
+    float: right;
+    margin-top: 500px;
+    margin-right: 50px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+}
