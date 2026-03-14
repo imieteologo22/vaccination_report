@@ -355,23 +355,33 @@
 
 </div>
 </div>
-<script>
-let searchBox = document.querySelector('#search-box');
-let images = document.querySelectorAll('.container .image-container .image');
 
-searchBox.oninput = () =>{
-  images.forEach(hide => hide.style.display = 'none');
-   let value = searchBox.value
-  images.forEach(filter =>{
-    let title = filter.getAttribute('data-title');
-      if(value == title){
-        filter.style.display = 'block';
+<script>
+  let searchBox = document.querySelector('#search-box');
+  let images = document.querySelectorAll('.container .image-container .image');
+  
+  searchBox.oninput = () => {
+  
+    let value = searchBox.value.toLowerCase();
+  
+    images.forEach(student => {
+  
+      let name = student.querySelector("h4").textContent.toLowerCase();
+  
+      if(name.includes(value)){
+        student.style.display = "block";
+      }else{
+        student.style.display = "none";
       }
-      if(searchBox.value == ''){
-        filter.style.display = 'block';
+  
+      if(value === ""){
+        student.style.display = "block";
       }
-  });
-};
-</script>
+  
+    });
+  
+  };
+  </script>
+
 </body>
 </html> 
